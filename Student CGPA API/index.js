@@ -74,6 +74,10 @@ const students = [
   }
 ];
 
+app.get("/", (req, res) => {
+  res.status(200).send("server is running");
+})
+
 // Return all students.
 
 app.get("/students", (req, res) => {
