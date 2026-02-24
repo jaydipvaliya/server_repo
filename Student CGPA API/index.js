@@ -121,7 +121,7 @@ app.get("/students/average", (req, res) => {
   let average = sum / students.length;
 
   res.status(200).json({
-    averageCGPA: Number(average)
+    averageCGPA: Number(average.toFixed(2))
   });
 
 });
